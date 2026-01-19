@@ -1,0 +1,38 @@
+/*
+  COMP 10259 – Assignment 3
+  Name: Mahtabin Tushi
+  Student Number: 000952184
+  File: style.css
+  Description: Custom styling for the Image Randomizer App.
+*/
+
+/* Animation class applied when image is clicked */
+img.spin {
+  animation: spin 1s ease-in-out;
+}
+
+/* Keyframes for spin animation (Y-axis rotation) */
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+/* Force all images in the app to be the same size */
+#image-display img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+/* Styling for the countdown timer display */
+#timer {
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  min-width: 200px;
+  transition: background-color 0.3s, color 0.3s;
+}
